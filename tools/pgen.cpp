@@ -26,6 +26,10 @@
 #include <map>
 #include <cassert>
 #include <cstring>
+//if the compiler reports the folowing issues include "CCTYPE"
+//'toupper' : is not a member of 'std' or
+//'isspace' : is not a member of 'std'
+#include <cctype>
 
 namespace {
 std::set<std::string> non_terminals;
